@@ -1,5 +1,7 @@
 {
-  "svelte": {
-    "url": "https://mcp.svelte.dev/mcp"
+  "mcpServers": {
+    "svelte": {
+      "url": "https://mcp.svelte.dev/mcp"
+    }
   }
 }
