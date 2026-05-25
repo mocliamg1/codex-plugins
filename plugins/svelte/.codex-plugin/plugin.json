@@ -1,0 +1,35 @@
+{
+  "name": "svelte",
+  "version": "0.1.0",
+  "description": "Svelte 5 and SvelteKit docs, best practices, and autofix workflows for Codex.",
+  "author": {
+    "name": "Fabian"
+  },
+  "license": "MIT",
+  "keywords": [
+    "svelte",
+    "sveltekit",
+    "frontend",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Svelte",
+    "shortDescription": "Svelte 5 docs, MCP tools, and coding guidance.",
+    "longDescription": "Adds Svelte 5 and SvelteKit workflows with documentation lookup, autofixer usage, and modern rune best practices.",
+    "developerName": "Fabian",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Analyze",
+      "Code"
+    ],
+    "defaultPrompt": [
+      "Use Svelte to write a Svelte 5 component.",
+      "Use Svelte to review this Svelte file.",
+      "Use Svelte to fetch SvelteKit docs."
+    ],
+    "brandColor": "#FF3E00"
+  }
+}

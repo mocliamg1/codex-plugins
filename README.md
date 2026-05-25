@@ -2,12 +2,18 @@
 
 Private Codex plugin marketplace for reusable workflows.
 
-## Marketplace
+## Install
 
-Codex should consume this repository with a sparse marketplace path:
+Add the marketplace from GitHub:
 
 ```bash
-codex plugin marketplace add <owner>/codex-plugins --sparse .agents/plugins
+codex plugin marketplace add <owner>/codex-plugins
 ```
 
-Plugins live under `.agents/plugins/plugins/<plugin-name>` and are listed in `.agents/plugins/marketplace.json`.
+The repository also keeps a `.agents/plugins` mirror for tools that expect repo-scoped marketplace files, but the root `marketplace.json` is the canonical manifest for `codex plugin marketplace add`.
+
+## Layout
+
+- `marketplace.json`: marketplace manifest consumed by Codex.
+- `plugins/<plugin-name>`: plugin packages referenced by the root marketplace.
+- `.agents/plugins`: mirrored marketplace layout for repo-scoped workflows.
